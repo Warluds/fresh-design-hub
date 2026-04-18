@@ -101,7 +101,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-4 relative z-10">
               <div className="brutal-border brutal-shadow-accent bg-background p-6 hover-lift">
                 <div className="font-display text-5xl font-bold">8+</div>
                 <div className="mt-1 text-sm uppercase tracking-wider text-muted-foreground">лет опыта в маркетинге</div>
