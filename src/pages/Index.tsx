@@ -46,7 +46,7 @@ const Index = () => {
       : "bg-foreground text-background";
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* NAV */}
       <header className="sticky top-0 z-50 border-b-2 border-foreground bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 md:px-8">
@@ -83,10 +83,10 @@ const Index = () => {
                 <span className="h-2 w-2 rounded-full bg-foreground animate-pulse" />
                 Алматы · {time}
               </div>
-              <h1 className="font-display text-[14vw] leading-[0.85] font-extrabold tracking-tighter md:text-[10rem]">
+              <h1 className="font-display font-extrabold tracking-tighter leading-[0.85] text-[13vw] sm:text-[12vw] lg:text-[7.5rem] xl:text-[9rem]">
                 ОТ ИДЕИ
                 <br />
-                ДО <span className="bg-accent px-3 text-accent-foreground">РЕЗУЛЬТАТА</span>
+                ДО <span className="inline-block bg-accent px-3 text-accent-foreground">РЕЗУЛЬТАТА</span>
               </h1>
               <p className="mt-8 max-w-xl text-lg text-muted-foreground md:text-xl">
                 Маркетинговое агентство полного цикла. Растим бренды через контент, рекламу и продакшн, который замечают.
