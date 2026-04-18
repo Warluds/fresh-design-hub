@@ -83,7 +83,7 @@ const Index = () => {
                 <span className="h-2 w-2 rounded-full bg-foreground animate-pulse" />
                 Алматы · {time}
               </div>
-              <h1 className="font-display font-extrabold tracking-tighter leading-[0.85] text-[13vw] sm:text-[12vw] lg:text-[7.5rem] xl:text-[9rem]">
+              <h1 className="font-display font-extrabold tracking-tighter leading-[0.85] text-[13vw] sm:text-[12vw] lg:text-[6.5rem] xl:text-[7.5rem] 2xl:text-[8.5rem]">
                 ОТ ИДЕИ
                 <br />
                 ДО <span className="inline-block bg-accent px-3 text-accent-foreground">РЕЗУЛЬТАТА</span>
@@ -101,7 +101,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-4 relative z-10">
               <div className="brutal-border brutal-shadow-accent bg-background p-6 hover-lift">
                 <div className="font-display text-5xl font-bold">8+</div>
                 <div className="mt-1 text-sm uppercase tracking-wider text-muted-foreground">лет опыта в маркетинге</div>
