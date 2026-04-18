@@ -83,7 +83,7 @@ const Index = () => {
                 <span className="h-2 w-2 rounded-full bg-foreground animate-pulse" />
                 Алматы · {time}
               </div>
-              <h1 className="font-display font-extrabold tracking-tighter leading-[0.85] text-[16vw] sm:text-[13vw] lg:text-[7.5rem] xl:text-[9rem]">
+              <h1 className="font-display font-extrabold tracking-tighter leading-[0.85] text-[13vw] sm:text-[12vw] lg:text-[7.5rem] xl:text-[9rem]">
                 ОТ ИДЕИ
                 <br />
                 ДО <span className="inline-block bg-accent px-3 text-accent-foreground">РЕЗУЛЬТАТА</span>
