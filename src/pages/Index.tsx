@@ -72,7 +72,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 border-b-2 border-foreground bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 md:px-8 gap-4">
           <a href="#" className="flex items-center gap-2 shrink-0">
-            <img src={logo} alt="Impulse Media" className="h-10 w-auto" />
+            <img src={logo} alt="Impulse Media" className="h-14 md:h-16 w-auto" />
           </a>
           <nav className="hidden items-center gap-8 md:flex">
             {[
@@ -299,7 +299,7 @@ const Index = () => {
       <footer className="bg-background">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-4 px-5 py-8 md:px-8">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Impulse Media" className="h-8 w-auto" />
+            <img src={logo} alt="Impulse Media" className="h-12 w-auto" />
           </div>
           <div className="text-xs uppercase tracking-wider text-muted-foreground">
             © {new Date().getFullYear()} Impulse Media · {t("footer.rights")}
