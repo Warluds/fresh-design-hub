@@ -1,12 +1,21 @@
-import { ArrowUpRight, Instagram, Megaphone, Palette, Video, Headphones, Code2, Sparkles, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowUpRight, Instagram, Megaphone, Palette, Video, Headphones, Code2, Mail, Phone, MapPin, Youtube, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   const { t, i18n } = useTranslation();
   const [time, setTime] = useState("");
+  const [showTop, setShowTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 400);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     const tick = () => {
@@ -27,6 +36,7 @@ const Index = () => {
     { icon: Video, key: "video", tone: "ink" as const, big: true },
     { icon: Code2, key: "web", tone: "accent" as const },
     { icon: Headphones, key: "manager", tone: "pop" as const },
+    { icon: Youtube, key: "youtube", tone: "ink" as const, big: true },
   ];
 
   const stats = [
@@ -53,6 +63,7 @@ const Index = () => {
     t("services.items.video.t"),
     t("services.items.web.t"),
     t("services.items.manager.t"),
+    t("services.items.youtube.t"),
   ];
 
   return (
@@ -61,10 +72,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 border-b-2 border-foreground bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 md:px-8 gap-4">
           <a href="#" className="flex items-center gap-2 shrink-0">
-            <span className="grid h-9 w-9 place-items-center bg-foreground text-background">
-              <Sparkles className="h-5 w-5" />
-            </span>
-            <span className="font-display text-xl font-bold tracking-tight">impulse<span className="text-accent">.</span>media</span>
+            <img src={logo} alt="Impulse Media" className="h-10 w-auto" />
           </a>
           <nav className="hidden items-center gap-8 md:flex">
             {[
@@ -260,7 +268,7 @@ const Index = () => {
             <div className="lg:col-span-5 space-y-5">
               {[
                 { Icon: Mail, label: t("contact.email"), value: "hello@impulse-media.kz", href: "mailto:hello@impulse-media.kz" },
-                { Icon: Phone, label: t("contact.phone"), value: "+7 (700) 000 00 00", href: "tel:+77000000000" },
+                { Icon: Phone, label: t("contact.phone"), value: "+7 701 880 7020", href: "tel:+77018807020" },
                 { Icon: Instagram, label: t("contact.instagram"), value: "@impulse.media", href: "https://instagram.com" },
                 { Icon: MapPin, label: t("contact.office"), value: t("contact.officeValue"), href: "#" },
               ].map(({ Icon, label, value, href }) => (
@@ -291,16 +299,25 @@ const Index = () => {
       <footer className="bg-background">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-4 px-5 py-8 md:px-8">
           <div className="flex items-center gap-2">
-            <span className="grid h-8 w-8 place-items-center bg-foreground text-background">
-              <Sparkles className="h-4 w-4" />
-            </span>
-            <span className="font-display text-base font-bold">impulse<span className="text-accent">.</span>media</span>
+            <img src={logo} alt="Impulse Media" className="h-8 w-auto" />
           </div>
           <div className="text-xs uppercase tracking-wider text-muted-foreground">
             © {new Date().getFullYear()} Impulse Media · {t("footer.rights")}
           </div>
         </div>
       </footer>
+
+      {/* BACK TO TOP */}
+      <button
+        type="button"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Back to top"
+        className={`fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center brutal-border brutal-shadow bg-accent text-accent-foreground hover-lift transition-all duration-300 ${
+          showTop ? "opacity-100 translate-y-0" : "opacity-0 pointer-events-none translate-y-4"
+        }`}
+      >
+        <ArrowUp className="h-6 w-6" strokeWidth={2.5} />
+      </button>
     </div>
   );
 };
