@@ -24,6 +24,7 @@ export const en = {
       video: { t: "Video production", d: "Reels, commercials, product shoots." },
       web: { t: "Websites & web design", d: "Landing pages and corporate sites end-to-end." },
       manager: { t: "Personal manager", d: "On call 24/7. One contact — everything under control." },
+      youtube: { t: "YouTube scripts & filming", d: "Script writing, episode prep, filming and editing content for your YouTube channel." },
     },
   },
   approach: {

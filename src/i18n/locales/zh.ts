@@ -24,6 +24,7 @@ export const zh = {
       video: { t: "视频拍摄与剪辑", d: "Reels、广告片、产品拍摄。" },
       web: { t: "网站与网页设计", d: "落地页和企业官网，端到端交付。" },
       manager: { t: "专属客户经理", d: "24/7 在线。一个联系人，全程掌控。" },
+      youtube: { t: "YouTube 脚本与拍摄", d: "为 YouTube 频道编写脚本、策划节目、拍摄和剪辑内容。" },
     },
   },
   approach: {
