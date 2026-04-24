@@ -45,7 +45,7 @@ export const zh = {
     title1: "用数据说话，",
     title2: "而非承诺",
     items: [
-      { tag: "零售", title: "涂料中心", metric: "点赞 +186%", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+      { tag: "零售", title: "涂料中心 №1", metric: "点赞 +186%", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
       { tag: "零售", title: "Dulux 哈萨克斯坦", metric: "受众 +20K", href: "http://dulux.kz/" },
       { tag: "零售", title: "Premium Kraski", metric: "粉丝 +87.5%", href: "https://www.instagram.com/premium.kraski/" },
       { tag: "零售", title: "Svet.kz Abis", metric: "ERR +1329%", href: "https://www.instagram.com/svet.kz_abis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },

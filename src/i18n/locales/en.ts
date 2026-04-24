@@ -45,7 +45,7 @@ export const en = {
     title1: "Numbers,",
     title2: "not promises",
     items: [
-      { tag: "Retail", title: "Paint center", metric: "+186% likes", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+      { tag: "Retail", title: "Centr Krasok #1", metric: "+186% likes", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
       { tag: "Retail", title: "Dulux Kazakhstan", metric: "+20K audience", href: "http://dulux.kz/" },
       { tag: "Retail", title: "Premium Kraski", metric: "+87.5% followers", href: "https://www.instagram.com/premium.kraski/" },
       { tag: "Retail", title: "Svet.kz Abis", metric: "ERR +1329%", href: "https://www.instagram.com/svet.kz_abis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },

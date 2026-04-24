@@ -45,7 +45,7 @@ export const kk = {
     title1: "Сандар,",
     title2: "уәделер емес",
     items: [
-      { tag: "Retail", title: "Бояулар орталығы", metric: "+186% лайк", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+      { tag: "Retail", title: "Бояулар орталығы №1", metric: "+186% лайк", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
       { tag: "Retail", title: "Dulux Kazakhstan", metric: "+20К аудитория", href: "http://dulux.kz/" },
       { tag: "Retail", title: "Premium Kraski", metric: "+87,5% жазылушы", href: "https://www.instagram.com/premium.kraski/" },
       { tag: "Retail", title: "Svet.kz Abis", metric: "ERR +1329%", href: "https://www.instagram.com/svet.kz_abis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
