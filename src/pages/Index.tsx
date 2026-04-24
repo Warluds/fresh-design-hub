@@ -47,7 +47,7 @@ const Index = () => {
   ];
 
   const approachSteps = t("approach.steps", { returnObjects: true }) as { t: string; d: string }[];
-  const caseItems = t("cases.items", { returnObjects: true }) as { tag: string; title: string; metric: string }[];
+  const caseItems = t("cases.items", { returnObjects: true }) as { tag: string; title: string; metric: string; href?: string }[];
 
   const toneCls = (tone: "accent" | "ink" | "pop") =>
     tone === "accent"
@@ -230,11 +230,13 @@ const Index = () => {
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {caseItems.map((c, i) => (
               <a
                 key={i}
-                href="#contact"
+                href={c.href || "#contact"}
+                target={c.href ? "_blank" : undefined}
+                rel={c.href ? "noopener noreferrer" : undefined}
                 className={`group brutal-border p-6 hover-lift flex flex-col justify-between min-h-[260px] ${
                   i % 3 === 0 ? "bg-accent text-accent-foreground" : i % 3 === 1 ? "bg-pop text-pop-foreground" : "bg-foreground text-background"
                 }`}

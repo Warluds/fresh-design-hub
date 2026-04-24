@@ -45,10 +45,11 @@ export const kk = {
     title1: "Сандар,",
     title2: "уәделер емес",
     items: [
-      { tag: "Beauty", title: "Маникюр студиясы", metric: "+312% жазылушы" },
-      { tag: "Retail", title: "Бояулар орталығы", metric: "22.4К аудитория" },
-      { tag: "HoReCa", title: "Кофеханалар желісі", metric: "×4 DM өтінім" },
-      { tag: "Авто", title: "Дилерлік орталық", metric: "ROAS 7.8" },
+      { tag: "Retail", title: "Бояулар орталығы", metric: "+186% лайк", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+      { tag: "Retail", title: "Dulux Kazakhstan", metric: "+20К аудитория", href: "http://dulux.kz/" },
+      { tag: "Retail", title: "Premium Kraski", metric: "+87,5% жазылушы", href: "https://www.instagram.com/premium.kraski/" },
+      { tag: "Retail", title: "Svet.kz Abis", metric: "ERR +1329%", href: "https://www.instagram.com/svet.kz_abis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+      { tag: "Retail", title: "Svet.kz Pro", metric: "Қамту ×6", href: "https://www.instagram.com/svet.kz_pro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
     ],
   },
   contact: {
