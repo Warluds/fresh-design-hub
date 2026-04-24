@@ -45,7 +45,7 @@ export const ru = {
     title1: "Цифры,",
     title2: "не обещания",
     items: [
-      { tag: "Retail", title: "Центр красок", metric: "+186% лайков", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+      { tag: "Retail", title: "Центр Красок №1", metric: "+186% лайков", href: "https://www.instagram.com/centr_krasok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
       { tag: "Retail", title: "Dulux Kazakhstan", metric: "+20К аудитории", href: "http://dulux.kz/" },
       { tag: "Retail", title: "Premium Kraski", metric: "+87,5% подписчиков", href: "https://www.instagram.com/premium.kraski/" },
       { tag: "Retail", title: "Svet.kz Abis", metric: "ERR +1329%", href: "https://www.instagram.com/svet.kz_abis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
